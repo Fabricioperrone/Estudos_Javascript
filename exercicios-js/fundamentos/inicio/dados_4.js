@@ -1,5 +1,6 @@
 /**
  * 3 tipos básicos que o Javascript aceita
+ * 3 tipos básicos que o Javascript aceita
  */
 let idade = 31;
 console.log(typeof 31); // typeof exibe o tipo de dado

@@ -14,3 +14,6 @@ console.log(result)
 
 const anotherSum = sum
 console.log(anotherSum(5, 9))
+
+let x = sum
+console.log(anotherSum(8, 8))

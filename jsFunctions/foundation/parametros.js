@@ -20,7 +20,7 @@ defaultParams()
 
 /** Arrays
 // operador: spread/rest
-// ... siginifica que vc vai receber uma qtd variavel de parametros e todos os para. 
+// ... significa que vc vai receber uma qtd variavel de parametros e todos os para. 
 // armazenado em uma função
  * 
  * @param  {...any} nums 

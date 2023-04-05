@@ -1,8 +1,5 @@
 
 //usando a função MAP para tranformar um array em outro array
-
-const { elementAt } = require("rxjs")
-
 const numbers = [1, 2, 3, 4, 5, 6]
 
 const numbersV2 = numbers.map(elemento => elemento * 2)

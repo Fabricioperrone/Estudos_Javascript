@@ -15,3 +15,7 @@ console.log(r)
 
 const cb = () => console.log('Exec...')
 setInterval(cb, 1000)
+
+setInterval(function () {
+    console.log('Exc3...')
+}, 1000)

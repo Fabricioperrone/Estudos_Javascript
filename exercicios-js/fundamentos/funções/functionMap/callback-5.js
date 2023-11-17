@@ -1,3 +1,5 @@
+const { isBigUint64Array } = require("util/types")
+
 const carrinho = [
     {nome: 'Caneta', qtde: '10', preco: '7.99'},
     {nome: 'Impressora', qtde: '0', preco: '649.50'},
@@ -35,3 +37,23 @@ const totalGeral2 = carrinho
 
 console.log(totalGeral2)
 
+
+// Meu Reduce
+Array.prototype.meuReduce = function(fn, inicial) {
+    let acc = inicial 
+
+    for(let i=0; i < this.length; i++) {
+        if(!acc && i === 0) {
+            acc = this[i]
+            continue
+        }
+        acc = fn(acc, this[i], i, this)
+    }
+    return acc
+}
+
+const totalGeral3 = carrinho
+    .map(getTotal)
+    .meuReduce(somar)
+
+console.log(totalGeral3)

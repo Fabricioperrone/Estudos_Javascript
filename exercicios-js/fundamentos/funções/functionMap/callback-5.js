@@ -57,3 +57,7 @@ const totalGeral3 = carrinho
     .meuReduce(somar)
 
 console.log(totalGeral3)
+
+
+
+
